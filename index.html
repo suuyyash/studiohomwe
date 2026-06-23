@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeStudio | Luxury Experience Center</title>
+    <script>
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <div class="page-transition-overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar glass">
+      <div class="container nav-inner">
+        <div class="nav-brand">HOMESTUDIO</div>
+        
+        <!-- Restored Inline Luxury Menu with Dropdown Mega-Menu -->
+        <div class="nav-menu">
+          <div class="nav-item has-mega">
+            <a href="#" class="hover-target" style="color: var(--text-light);">Collections</a>
+            <div class="mega-dropdown">
+              <div class="mega-col">
+                <h4>Water</h4>
+                <a href="./faucets.html" class="hover-target">Faucets & Mixers</a>
+                <a href="./showers.html" class="hover-target">Shower Systems</a>
+                <a href="./faucets.html" class="hover-target">Kitchen Tapware</a>
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=500&q=80" class="mega-img" alt="Faucets">
+              </div>
+              <div class="mega-col">
+                <h4>Wellness</h4>
+                <a href="./wellness.html" class="hover-target">Freestanding Jacuzzis</a>
+                <a href="./wellness.html" class="hover-target">Spa Systems</a>
+                <a href="./wellness.html" class="hover-target">Saunas</a>
+                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=500&q=80" class="mega-img" alt="Wellness">
+              </div>
+              <div class="mega-col">
+                <h4>Ceramics</h4>
+                <a href="./sanitaryware.html" class="hover-target">Sanitaryware</a>
+                <a href="./sanitaryware.html" class="hover-target">Washbasins</a>
+                <a href="./smart.html" class="hover-target">Smart Toilets</a>
+                <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=500&q=80" class="mega-img" alt="Ceramics">
+              </div>
+              <div class="mega-col">
+                <h4>Surfaces</h4>
+                <a href="./tiles.html" class="hover-target">Architectural Tiles</a>
+                <a href="./tiles.html" class="hover-target">Natural Stone Slabs</a>
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=80" class="mega-img" alt="Surfaces">
+              </div>
+            </div>
+          </div>
+          <div class="nav-item"><a href="#experience" class="hover-target">Experience Center</a></div>
+          <div class="nav-item"><a href="#gallery" class="hover-target">Gallery</a></div>
+        </div>
+
+        <div class="nav-actions">
+          <button id="theme-toggle" class="hover-target" style="background: none; border: none; color: var(--text-light); cursor: pointer; display: flex; align-items: center;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- 1. Hero Section -->
+      <section class="hero full-height">
+        <div class="hero-video-wrap">
+          <!-- Warm, highly reliable architectural placeholder -->
+          <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=2500&q=80" class="hero-bg-img" alt="Premium Showroom">
+        </div>
+        <div class="container hero-content">
+          <h1 class="mega-title">
+            <span class="text-reveal"><span class="text-reveal-inner hero-text-line">Crafting</span></span><br>
+            <span class="text-reveal"><span class="text-reveal-inner hero-text-line">Luxury</span></span><br>
+            <span class="text-reveal"><span class="text-reveal-inner hero-text-line" style="color: var(--accent-gold);">Experiences.</span></span>
+          </h1>
+          <p class="hero-subtext" style="margin-top: 2rem; font-size: 1.2rem; color: var(--text-muted); opacity: 0; transform: translateY(20px);">
+            Where design, wellness, and sophistication come together.
+          </p>
+          <div class="hero-btns" style="margin-top: 4rem; display: flex; gap: 2rem; justify-content: center; opacity: 0; transform: translateY(20px);">
+            <a href="#collections" class="btn hover-target">Explore Collections</a>
+            <a href="#visit" class="btn hover-target" style="border-color: var(--accent-gold); color: var(--accent-gold);">Visit Studio</a>
+          </div>
+        </div>
+        <div class="scroll-indicator" style="opacity: 0;">
+          <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em;">Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- 2. Philosophy (New) -->
+      <section style="padding: 10rem 0; background: var(--bg-secondary);">
+        <div class="container">
+          <p class="editorial-text text-reveal-inner" style="display: block; transform: translateY(0);">
+            "We believe the bathroom is no longer just a utility. It is the ultimate sanctuary—a space for rejuvenation, meditation, and architectural expression."
+          </p>
+          <div style="text-align: center; margin-top: 3rem;">
+            <span style="font-family: var(--font-heading); color: var(--accent-gold); letter-spacing: 0.1em;">The HomeStudio Philosophy</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Top Brands Marquee (New) -->
+      <div class="marquee-wrap">
+        <div class="marquee-inner">
+          <div class="marquee-item">Gessi</div>
+          <div class="marquee-item">Kohler</div>
+          <div class="marquee-item">Toto</div>
+          <div class="marquee-item">Villeroy & Boch</div>
+          <div class="marquee-item">Hansgrohe</div>
+          <div class="marquee-item">Dornbracht</div>
+          <div class="marquee-item">Victoria + Albert</div>
+          <!-- Duplicate for seamless loop -->
+          <div class="marquee-item">Gessi</div>
+          <div class="marquee-item">Kohler</div>
+          <div class="marquee-item">Toto</div>
+          <div class="marquee-item">Villeroy & Boch</div>
+          <div class="marquee-item">Hansgrohe</div>
+          <div class="marquee-item">Dornbracht</div>
+          <div class="marquee-item">Victoria + Albert</div>
+        </div>
+      </div>
+
+      <!-- 4. Experience Center -->
+      <section id="experience" style="padding-top: 15rem;">
+        <div class="container">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;">
+            <div>
+              <span class="subtitle" data-speed="0.9">The Studio</span>
+              <h2 class="section-title text-reveal-inner" style="display: block; transform: translateY(0);">A Gallery of Global Brands</h2>
+              <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem; max-width: 80%;">
+                HomeStudio is not an ecommerce store. It is a highly curated luxury experience center showcasing the pinnacle of international wellness, sanitaryware, and architectural surfaces.
+              </p>
+              <a href="#visit" class="btn hover-target" style="border-color: var(--accent-gold); color: var(--accent-gold);">Schedule a Consultation</a>
+            </div>
+            <div style="position: relative; height: 70vh; overflow: hidden;" class="glass">
+              <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80" alt="Studio" style="width: 100%; height: 100%; object-fit: cover;" data-speed="1.1">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Collections Grid -->
+      <section id="collections">
+        <div class="container">
+          <span class="subtitle">Curated Portfolios</span>
+          <h2 class="section-title">The Collections</h2>
+          
+          <div class="collection-grid">
+            <!-- Faucets -->
+            <a href="./faucets.html" class="category-card col-span-8 hover-target">
+              <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80" class="card-img" alt="Faucets"></div>
+              <div class="card-content">
+                <h3 class="card-title">CP Fittings</h3>
+                <p class="card-desc">Architectural tapware and designer shower systems.</p>
+              </div>
+            </a>
+            
+            <!-- Sanitaryware -->
+            <a href="./sanitaryware.html" class="category-card col-span-4 hover-target">
+              <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80" class="card-img" alt="Sanitaryware"></div>
+              <div class="card-content">
+                <h3 class="card-title">Sanitaryware</h3>
+                <p class="card-desc">Minimalist, sculptural ceramic forms.</p>
+              </div>
+            </a>
+            
+            <!-- Wellness -->
+            <a href="./wellness.html" class="category-card col-span-6 hover-target">
+              <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1000&q=80" class="card-img" alt="Wellness"></div>
+              <div class="card-content">
+                <h3 class="card-title">Wellness & Spa</h3>
+                <p class="card-desc">Freestanding jacuzzis and home spa systems.</p>
+              </div>
+            </a>
+            
+            <!-- Tiles -->
+            <a href="./tiles.html" class="category-card col-span-6 hover-target">
+              <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" class="card-img" alt="Tiles"></div>
+              <div class="card-content">
+                <h3 class="card-title">Tiles & Surfaces</h3>
+                <p class="card-desc">Premium imported slabs and architectural finishes.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Footer (Reverted to elegant minimal style) -->
+      <section style="padding: 8rem 0 2rem 0;">
+        <div class="container">
+          <div class="footer" style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-color); padding-top: 2rem;">
+            <div class="nav-brand" style="font-size: 1rem;">HOMESTUDIO</div>
+            <div style="display: flex; gap: 2rem; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">
+              <a href="#" class="hover-target" style="color: var(--text-muted);">Instagram</a>
+              <a href="#" class="hover-target" style="color: var(--text-muted);">Pinterest</a>
+              <a href="#" class="hover-target" style="color: var(--text-muted);">LinkedIn</a>
+            </div>
+            <div style="font-size: 0.8rem; color: var(--text-muted);">&copy; 2026 HOMESTUDIO. ALL RIGHTS RESERVED.</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeStudio | Wellness & Jacuzzi</title>
+    <script>
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <div class="page-transition-overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar glass">
+      <div class="container nav-inner">
+        <div class="nav-brand"><a href="./" class="hover-target">HOMESTUDIO</a></div>
+        <div class="nav-menu">
+          <div class="nav-item has-mega">
+            <a href="#" class="hover-target">Collections</a>
+            <div class="mega-dropdown">
+              <div class="mega-col">
+                <h4>Water</h4>
+                <a href="./faucets.html" class="hover-target">Faucets & Mixers</a>
+                <a href="./showers.html" class="hover-target">Shower Systems</a>
+                <a href="./faucets.html" class="hover-target">Kitchen Tapware</a>
+              </div>
+              <div class="mega-col">
+                <h4>Wellness</h4>
+                <a href="./wellness.html" class="hover-target">Freestanding Jacuzzis</a>
+                <a href="./wellness.html" class="hover-target">Spa Systems</a>
+                <a href="./wellness.html" class="hover-target">Saunas</a>
+              </div>
+              <div class="mega-col">
+                <h4>Ceramics</h4>
+                <a href="./sanitaryware.html" class="hover-target">Sanitaryware</a>
+                <a href="./sanitaryware.html" class="hover-target">Washbasins</a>
+                <a href="./smart.html" class="hover-target">Smart Toilets</a>
+              </div>
+              <div class="mega-col">
+                <h4>Surfaces</h4>
+                <a href="./tiles.html" class="hover-target">Architectural Tiles</a>
+                <a href="./tiles.html" class="hover-target">Natural Stone Slabs</a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item"><a href="./wellness.html" class="hover-target" style="color: var(--text-light);">Experience Center</a></div>
+          <div class="nav-item"><a href="./#gallery" class="hover-target">Gallery</a></div>
+        </div>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="hover-target" style="background: none; border: none; color: var(--text-light); cursor: pointer; display: flex; align-items: center;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero full-height">
+        <div class="hero-video-wrap">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=2500&q=80" class="hero-bg-img" alt="Luxury Wellness">
+        </div>
+        <div class="container hero-content">
+          <h1 class="mega-title">
+            <span class="text-reveal"><span class="text-reveal-inner hero-text-line">The Home</span></span><br>
+            <span class="text-reveal"><span class="text-reveal-inner hero-text-line" style="color: var(--accent-gold);">Sanctuary.</span></span>
+          </h1>
+          <p class="hero-subtext" style="margin-top: 2rem; font-size: 1.2rem; color: var(--text-muted); opacity: 0; transform: translateY(20px);">
+            Immerse yourself in complete tranquility. Freestanding jacuzzis and architectural spa systems.
+          </p>
+        </div>
+        <div class="scroll-indicator" style="opacity: 0;">
+          <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em;">Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- Editorial Deep Dive -->
+      <section style="padding: 10rem 0; background: var(--bg-secondary);">
+        <div class="container">
+          <p class="editorial-text text-reveal-inner" style="display: block; transform: translateY(0);">
+            "Wellness is an art form. We engineer environments that disconnect you from the noise of the world and reconnect you with profound tranquility."
+          </p>
+          <div style="text-align: center; margin-top: 3rem; color: var(--text-muted); max-width: 600px; margin-left: auto; margin-right: auto; font-size: 1.1rem;">
+            From architecturally integrated Jacuzzis with invisible water edges to bespoke Finnish saunas with precision climate control, our wellness systems transform residential bathrooms into world-class retreats.
+          </div>
+        </div>
+      </section>
+
+      <!-- Asymmetrical Gallery -->
+      <section style="padding-top: 10rem; padding-bottom: 10rem;">
+        <div class="container">
+          <span class="subtitle">The Collection</span>
+          <h2 class="section-title">Hydrotherapy Reimagined</h2>
+          
+          <div class="gallery-grid">
+            <div class="gallery-item gi-wide hover-target">
+              <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Infinity Spa" data-speed="0.8">
+              <div class="gallery-caption">
+                <h3>The Infinity Spa</h3>
+                <p>Seamless water edge technology.</p>
+              </div>
+            </div>
+            
+            <div class="gallery-item gi-tall hover-target" style="margin-top: 4rem;">
+              <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" alt="Freestanding Tub" data-speed="1.1">
+              <div class="gallery-caption">
+                <h3>Sculptural Freestanding Tubs</h3>
+                <p>Hand-finished stone resin.</p>
+              </div>
+            </div>
+            
+            <div class="gallery-item gi-large hover-target">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1500&q=80" alt="Sauna System" data-speed="0.9">
+              <div class="gallery-caption">
+                <h3>Bespoke Sauna Systems</h3>
+                <p>Finnish timber and precision climate control.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Footer -->
+      <section style="padding: 4rem 0 2rem 0;">
+        <div class="container">
+          <div class="footer" style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-color); padding-top: 2rem;">
+            <div class="nav-brand" style="font-size: 1rem;">HOMESTUDIO</div>
+            <div style="display: flex; gap: 2rem; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">
+              <a href="#" class="hover-target" style="color: var(--text-muted);">Instagram</a>
+              <a href="#" class="hover-target" style="color: var(--text-muted);">Pinterest</a>
+              <a href="#" class="hover-target" style="color: var(--text-muted);">LinkedIn</a>
+            </div>
+            <div style="font-size: 0.8rem; color: var(--text-muted);">&copy; 2026 HOMESTUDIO. ALL RIGHTS RESERVED.</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
